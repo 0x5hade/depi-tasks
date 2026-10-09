@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Neue', sans-serif;
+}
+
+.hero-bg {
+  background-image: url('./assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.navbar .pages {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 26px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.navbar .pages a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar button {
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: salmon;
+}
+
+.logo-img, .logo-img img {
+  height: 128px;
+  width: 192px;
+  object-fit: contain;
+}
+
+.always-laugh {
+  font-family: 'Playfair Display', sans-serif;
+  background-color: rgba(25, 135, 84, 0.6);
+  border-radius: 22px;
+  border: none;
+}
+
+.always-laugh .card-body {
+  background-color: transparent;
+}
+
+.always-laugh div p {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.school-clinic-section {
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+h4 {
+  color: blue;
+  font-size: 32px;
+}
+
+.school-clinic-heading {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  text-align: center;
+  width: 25%;
+}
+
+.line {
+  border: solid orange 5px;
+}
+
+.school-clinic-paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.school-clinic-paragraph p { 
+  font-size: 24px;
+}
+
+.dont-hestegate {
+  min-height: 100vh;
+  background-image: url('./assets/Path 62.png'), url('./assets/doc.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.doctors {
+  min-height: 30vh;
+}
+
+.footer-bg {
+  background-color: #127255;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  margin-top: 60px;
+}
+
+.footer-bg p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #e0e0e0;
+}
+
+
+@media (max-width: 1200px) {
+  .school-clinic-heading {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .pages {
+    gap: 20px;
+  }
+  .always-laugh div p {
+    font-size: 30px;
+  }
+  .school-clinic-heading {
+    width: 80%;
+  }
+  .school-clinic-paragraph {
+    align-items: center;
+  }
+}
