@@ -3,49 +3,155 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap task</title>
+    <title>Madrasty</title>
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   </head>
-  
+
   <body>
-    <div class="container">
-      <table class="table table-striped table-hover table-sm">
-        <caption>I'm just playing around with the table classes lol</caption>
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="bg-success text-white">
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          <tr class="bg-danger text-white">
-            <th scope="row">4</th>
-            <td colspan="3">Just another row for red color</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+
+    <!-- Header -->
+    <section class="hero-bg container-fluid">
+
+      <!-- Navbar -->
+      <div class="container mb-5 pt-3">
+        <navbar class="navbar row align-items-center text-center text-xl-start">
+          <div class="logo-img col-xl-2 col-12 mb-3 mb-xl-0">
+            <img src="./assets/logo.png" alt="logo">
+          </div>
+
+          <div class="pages offset-xl-1 col-xl-6 col-12 mb-3 mb-xl-0 d-flex justify-content-center justify-content-xl-start">
+            <a href="#"><strong>Home</strong></a>
+            <a href="#"><strong>About</strong></a>
+            <a href=""><strong>Affairs</strong></a>
+            <a href="#"><strong>Subject</strong></a>
+          </div>
+          <button class="offset-lg-1 col-xl-1 col-6 col-md-3 mx-auto mx-xl-0 mt-3 mt-xl-0">Log out</button>
+        </navbar>
+      </div>
+
+      <!-- Always laugh card -->
+      <div class="always-laugh card offset-lg-1 col-xl-4 col-md-8 col-8 mx-lg-5 mx-auto mt-5 mt-xl-0">
+        <div class="card-body text-white">
+          <p class="card-text">Always laugh when you can, It is free medicine</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- School Clinic Section -->
+    <section class="school-clinic-section container-fluid">
+      <div class="school-clinic-heading mb-5 mx-auto">
+        <h2 class="text-primary">School Clinic</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="row mx-auto px-5 px-xl-5 align-items-center">
+        <div class="col-xl-6 col-12 mb-4 mb-xl-0 text-center text-xl-start">
+          <img src="./assets/compo.png" class="img-fluid w-100"/>
+        </div>
+        <div class="col-xl-6 col-12 school-clinic-paragraph px-md-5">
+          <h4>The school clinic services</h4>
+          <p>Conducting periodic checks for students. Implementing vaccination programs to prevent diseases, according to the instructions of the Ministry of Health. Follow-up of sick cases and contact with parents to attend if the case requires providing a healthy environment in the school community.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Don't Hesitate to be in Touch -->
+    <section class="dont-hestegate container-fluid py-5 d-flex flex-column justify-content-center">
+      <h2 class="text-center text-white mb-5">Don't Hesitate to be in Touch</h2>
+      <div class="row px-2 px-xl-5 justify-content-center">
+
+        <div class="col-12 col-md-6 col-xl-3 mb-5">
+          <div class="card p-3 dont-hestegate-card">
+            <img src="./assets/s1.png" class="mb-4">
+            <h5>First Aids</h5>
+            <p class="text-muted m-0">Providing general safety and first aid supplies. Conducting the necessary first aid and referring emergency cases to hospitals when necessary.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3 mb-5">
+          <div class="card h-100 p-3">
+            <img src="./assets/s2.png" class="mb-4">
+            <h5>Health education</h5>
+            <p class="text-muted">Conducting awareness and educational lectures on public health and the importance of eating healthy foods.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3 mb-5">
+          <div class="card h-100 p-3">
+            <img src="./assets/s3.png" class="mb-4">
+            <h5>Dental Health and Safety</h5>
+            <p class="text-muted m-0">Do a regular dental checkup. Spreading awareness and promoting healthy behavior among students of basic grades.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3 mb-5">
+          <div class="card h-100 p-3">
+            <img src="./assets/s4.png" class="mb-4">
+            <h5>Student insurance</h5>
+            <p class="text-muted m-0">The doctor or nurse handles simple ambulance cases, while the student is transferred to the hospital if necessary within the coverage program.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Doctors -->
+    <section  class="doctors container-fluid pt-5">
+      <div class="justify-content-center mx-auto row gap-5">
+        <img src="./assets/g.png" class="col-lg-2 col-md-6 col-12 px-3 mt-1">
+        <img src="./assets/g.png" class="col-lg-2 col-md-6 col-12 px-3 mt-1">
+        <img src="./assets/g.png" class="col-lg-2 col-md-6 col-12 px-3 mt-1">
+        <img src="./assets/g.png" class="col-lg-2 col-md-6 col-12 px-3 mt-1">
+      </div>
+    </section>
+
+    <footer class="container-fluid footer-bg text-white">
+      <div class="row pt-5 pb-4 px-3 px-lg-5 justify-content-evenly">
+        <div class="col-12 col-lg-4 text-center text-lg-start mb-5 mb-lg-0">
+          <h5 class="fw-bold mb-4 fs-4">Madrasty</h5>
+          <p class="footer-desc mx-auto mx-lg-0">The Best collection of international schools For All Student In All different Ages From six years to 15 years</p>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-2 text-center text-lg-start mb-4 mb-lg-0">
+          <h6 class="fs-5 mb-4 fw-normal">Student</h6>
+          <div class="footer-links">
+            <p>Result</p>
+            <p>Exams</p>
+            <p>Quizes</p>
+            <p>Courses</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-2 text-center text-lg-start mb-4 mb-lg-0">
+          <h6 class="fs-5 mb-4 fw-normal">News</h6>
+          <div class="footer-links">
+            <p>Uniform</p>
+            <p>chapion</p>
+            <p>Tables</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-2 text-center text-lg-start mb-4 mb-lg-0">
+          <h6 class="fs-5 mb-4 fw-normal">Contact</h6>
+          <div class="footer-links">
+            <p>2033500394</p>
+            <p>Or32@Yahoo.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
+</html>    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
