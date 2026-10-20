@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 90vh;
+}
+
+
+/* I genuinely don't remember if there was a way to do this in bootstrap, and I couldn't find it lol. So I'll just override it with !important */
+.custom-rounded-indicators {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+}
+
+.custom-caption-center {
+  bottom: 50%;
+}
